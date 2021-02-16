@@ -281,10 +281,9 @@ dictionary PeriodicSyncEventInit : ExtendableEventInit {
     required DOMString tag;
 };
 
-[
-    Constructor(DOMString type, PeriodicSyncEventInit init),
-    Exposed=ServiceWorker
-] interface PeriodicSyncEvent : ExtendableEvent {
+[Exposed=ServiceWorker]
+interface PeriodicSyncEvent : ExtendableEvent {
+    constructor(DOMString type, PeriodicSyncEventInit init);
     readonly attribute DOMString tag;
   };
 </script>
