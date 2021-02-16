@@ -285,7 +285,7 @@ dictionary PeriodicSyncEventInit : ExtendableEventInit {
 interface PeriodicSyncEvent : ExtendableEvent {
     constructor(DOMString type, PeriodicSyncEventInit init);
     readonly attribute DOMString tag;
-  };
+};
 </script>
 
 <div dfn-for="PeriodicSyncEvent">
