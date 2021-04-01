@@ -217,9 +217,9 @@ The <dfn attribute>periodicSync</dfn> attribute's getter must return the [=conte
 <script type="idl">
 [Exposed=(Window,Worker)]
 interface PeriodicSyncManager {
-    Promise<void> register(DOMString tag, optional BackgroundSyncOptions options);
+    Promise<undefined> register(DOMString tag, optional BackgroundSyncOptions options);
     Promise<sequence<DOMString>> getTags();
-    Promise<void> unregister(DOMString tag);
+    Promise<undefined> unregister(DOMString tag);
 };
 
 dictionary BackgroundSyncOptions {
