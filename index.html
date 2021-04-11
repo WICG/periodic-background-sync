@@ -6,7 +6,7 @@
   <link href="https://www.w3.org/StyleSheets/TR/2016/cg-draft" rel="stylesheet">
   <meta content="Bikeshed version c5fd42b86, updated Mon Apr 5 16:27:33 2021 -0700" name="generator">
   <link href="https://wicg.github.io/periodic-background-sync/index.html" rel="canonical">
-  <meta content="da5b9052860985c0583afc0b77857d9f4153a978" name="document-revision">
+  <meta content="9997aab0c453f498e965ea1d3eff0cad49db1f14" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -738,7 +738,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
    <p>This API is intended to reduce the time between content creation and content synchronization between the servers and the web app. It does so by letting the web app register an intent to periodically synchronize state and data, with a minimum interval it wishes to do so at. Through a service worker event, the user agent then periodically lets the web app download network resources and update state.</p>
    <p>As this API relies on service workers, functionality provided by this API is only available in a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#secure-context" id="ref-for-secure-context">secure context</a>.</p>
    <h3 class="heading settled" data-level="1.1" id="example"><span class="secno">1.1. </span><span class="content">Example</span><a class="self-link" href="#example"></a></h3>
-    Registering periodic background sync at a mininimum interval of one day from a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context">browsing context</a>: 
+    Registering periodic background sync at a mininimum interval of one day from a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc" id="ref-for-concept-document-bc">browsing context</a>: 
 <pre class="lang-js highlight"><c- k>async</c-> <c- a>function</c-> registerPeriodicNewsCheck<c- p>()</c-> <c- p>{</c->
   <c- a>const</c-> registration <c- o>=</c-> <c- k>await</c-> navigator<c- p>.</c->serviceWorker<c- p>.</c->ready<c- p>;</c->
   <c- k>try</c-> <c- p>{</c->
@@ -1310,10 +1310,10 @@ The user agent should cap the duration and frequency of these events to limit re
     <li><a href="#ref-for-eventhandler">8.1. Extensions to the ServiceWorkerGlobalScope interface</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-browsing-context">
-   <a href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context">https://html.spec.whatwg.org/multipage/browsers.html#browsing-context</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-concept-document-bc">
+   <a href="https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc">https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-browsing-context">1.1. Example</a>
+    <li><a href="#ref-for-concept-document-bc">1.1. Example</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-enqueue-the-following-steps">
@@ -1626,7 +1626,7 @@ The user agent should cap the duration and frequency of these events to limit re
     <a data-link-type="biblio">[HTML]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-eventhandler">EventHandler</span>
-     <li><span class="dfn-paneled" id="term-for-browsing-context">browsing context</span>
+     <li><span class="dfn-paneled" id="term-for-concept-document-bc">browsing context</span>
      <li><span class="dfn-paneled" id="term-for-enqueue-the-following-steps">enqueue the following steps</span>
      <li><span class="dfn-paneled" id="term-for-in-parallel">in parallel</span>
      <li><span class="dfn-paneled" id="term-for-secure-context">secure context</span>
