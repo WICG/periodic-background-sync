@@ -20,7 +20,7 @@ spec: background-fetch; urlPrefix: https://wicg.github.io/background-fetch/
 </pre>
 
 <pre class=link-defaults>
-spec:html; type:dfn; for:/; text:browsing context
+spec:html; type:dfn; for:Document; text:browsing context
 spec:service-workers;
   type:dfn; text:frame type
   type:dfn; text:origin
